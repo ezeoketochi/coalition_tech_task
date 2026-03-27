@@ -9,10 +9,13 @@ export default function PatientCard({ gender, age, name }) {
         className='flex justify-between items-center w-full' >
 
         <div className='flex gap-3'>
-            <img src={seniordoc} alt="Senior Doctor" />
+            <div className="h-10 w-10 rounded-full bg-gray-200 flex justify-center items-center">
+                <img className='object-contain' src={seniordoc} alt="Senior Doctor" />
+
+            </div>
 
             <div className='flex flex-col justify-start items-start '>
-                <h1 className='font-bold  '> {name}</h1>
+                <h1 className='font-bold text-[14px] '> {name}</h1>
 
                 <div className='flex gap-1 text-sm'>
                     <h1 className='text-gray-500'> {gender},</h1>

@@ -31,7 +31,7 @@ export default function AppBar() {
             </div>
             <div className='flex flex-col ml-2 justify-center items-start'>
                 <h1 className='text-sm lg:text-base font-bold'>Dr. Josse Simmons</h1>
-                <p className='text-xs lg:text-sm text-gray-500'>Senior Doctor</p>
+                <p className='text-xs lg:text-sm text-gray-500'>General Practitioner</p>
             </div>
 
             <div className="w-px self-stretch bg-gray-200 dark:bg-gray-700" />
