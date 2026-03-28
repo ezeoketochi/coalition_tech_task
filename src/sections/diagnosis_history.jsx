@@ -1,3 +1,4 @@
+import DiagnosisChart from "../components/chart";
 import DiagnosticTable from "../components/diagnostic_table";
 
 export default function DiagnosisHistorySection({ data }) {
@@ -7,20 +8,21 @@ export default function DiagnosisHistorySection({ data }) {
 
         <div className="flex flex-col gap-4 h-full ">
 
-            <div id="diagnosis-history" className="bg-white rounded-lg sm:rounded-[40px] p-8 shadow-md flex-5">
+            <div id="diagnosis-history" className="bg-white rounded-lg sm:rounded-[40px] p-8 shadow-md flex-5 flex-col">
 
-                <div className="py-3">
+                <div className="py-3 h-[10%] flex items-center justify-start">
                     <h1 className="text-lg font-bold text-md sm:text-2xl lg:text-[24px]">Diagnosis History</h1>
 
                 </div >
 
-                <div>
+                <div className="flex flex-col gap-4 h-[90%]">
 
-                    <div id="chart" className="">
+                    <div id="chart" className=" bg-gray-200 rounded-lg flex-3">
+                        <DiagnosisChart data={data.diagnosis_history}/>
 
                     </div>
 
-                    <div id="vitals">
+                    <div id="vitals" className="bg-red-500 flex-2 rounded-lg">
 
                     </div>
 
