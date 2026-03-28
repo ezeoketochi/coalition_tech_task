@@ -1,16 +1,15 @@
 import { motion } from 'framer-motion';
-import seniordoc from '../assets/senior_doctor.png';
 import { MoreHorizontal } from '@hugeicons/core-free-icons';
 import { HugeIcon } from '../icons/settings_icon';
 
 
-export default function PatientCard({ gender, age, name }) {
+export default function PatientCard({ gender, age, name, img }) {
     return <motion.div
         className='flex justify-between items-center w-full' >
 
         <div className='flex gap-3'>
             <div className="h-10 w-10 rounded-full bg-gray-200 flex justify-center items-center">
-                <img className='object-contain' src={seniordoc} alt="Senior Doctor" />
+                <img className='object-contain' src={img} alt="Senior Doctor" />
 
             </div>
 

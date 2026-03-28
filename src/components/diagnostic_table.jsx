@@ -1,5 +1,7 @@
 export default function DiagnosticTable({ data }) {
 
+    console.log(`data for table is ${data}`)
+
     return <div className=" bg-transparent overflow-y-auto">
 
         <table className="w-full text-left">
@@ -13,9 +15,9 @@ export default function DiagnosticTable({ data }) {
 
             </thead>
             <tbody className="divide-y divide-gray-100">
-                {data.map((row, index) => (
+                {data && data.diagnostic_list.map((row, index) => (
                     <tr key={index} className="hover:bg-gray-50">
-                        <td className="px-8 py-6 text-sm text-gray-800">{row.problem}</td>
+                        <td className="px-8 py-6 text-sm text-gray-800">{row.name}</td>
                         <td className="px-8 py-6 text-sm text-gray-600">{row.description}</td>
                         <td className="px-8 py-6 text-sm text-gray-800">{row.status}</td>
                     </tr>

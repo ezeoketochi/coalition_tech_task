@@ -1,15 +1,6 @@
 import DiagnosticTable from "../components/diagnostic_table";
 
-export default function DiagnosisHistorySection() {
-
-    const data = [
-        { problem: "Hypertension", description: "Chronic high blood pressure", status: "Under Observation" },
-        { problem: "Type 2 Diabetes", description: "Insulin resistance and elevated blood sugar", status: "Cured" },
-        { problem: "Asthma", description: "Recurrent episodes of bronchial constriction", status: "Inactive" },
-        { problem: "Hypertension", description: "Chronic high blood pressure", status: "Under Observation" },
-        { problem: "Type 2 Diabetes", description: "Insulin resistance and elevated blood sugar", status: "Cured" },
-        { problem: "Asthma", description: "Recurrent episodes of bronchial constriction", status: "Inactive" },
-    ];
+export default function DiagnosisHistorySection({ data }) {
 
 
     return <section id="diagnosis" className="h-full">
@@ -21,7 +12,21 @@ export default function DiagnosisHistorySection() {
                 <div className="py-3">
                     <h1 className="text-lg font-bold text-md sm:text-2xl lg:text-[24px]">Diagnosis History</h1>
 
+                </div >
+
+                <div>
+
+                    <div id="chart" className="">
+
+                    </div>
+
+                    <div id="vitals">
+
+                    </div>
+
                 </div>
+
+
 
 
             </div>
