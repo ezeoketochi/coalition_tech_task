@@ -29,7 +29,7 @@ function App() {
           Error: {error.message}</div>
       ) : (
         data && (
-          <div className="flex flex-col lg:grid flex-1 gap-3 lg:grid-cols-[1fr_2fr] 2xl:grid-cols-[20%_1fr_20%] my-2 lg:gap-8 min-h-0">
+          <div className="flex flex-col lg:grid flex-1 gap-3 lg:grid-cols-[1fr_2fr] 2xl:grid-cols-[20%_1fr_20%] lg:gap-8 min-h-0">
 
             <div className="min-h-0">
               <PatientsSection data={data} />
