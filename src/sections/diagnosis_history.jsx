@@ -17,9 +17,8 @@ export default function DiagnosisHistorySection({ data }) {
 
                 <div className="flex flex-col gap-4 h-[90%] w-full">
 
-                    <div id="chart" className=" bg-gray-200 rounded-lg flex-3 w-full min-h-0">
-                        <DiagnosisChart data={data.diagnosis_history}/>
-
+                    <div id="chart" className="flex bg-gray-200 rounded-lg flex-3 w-full min-h-0">
+                        <DiagnosisChart data={[...data.diagnosis_history].reverse()} />
                     </div>
 
                     <div id="vitals" className="bg-red-500 flex-2 rounded-lg">

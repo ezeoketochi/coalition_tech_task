@@ -1,4 +1,4 @@
-import { Download01FreeIcons } from '@hugeicons/core-free-icons';
+import {  CalendarUserFreeIcons , Female02FreeIcons , PhoneOffIcon , Contact01FreeIcons, InsertColumnRightFreeIcons } from '@hugeicons/core-free-icons';
 import ProfileTile from "../components/profile_tile";
 import LabResultSection from "../components/lab_result";
 
@@ -6,11 +6,11 @@ import LabResultSection from "../components/lab_result";
 export default function ProfileSection({ profileData}) {
 
     const data = [
-        { title: "Date Of Birth", subtitle: profileData.date_of_birth , icon: Download01FreeIcons },
-        { title: "Gender", subtitle: profileData.gender, icon: Download01FreeIcons },
-        { title: "Contact Info", subtitle: profileData.phone_number, icon: Download01FreeIcons },
-        { title: "Emergency Contacts", subtitle: profileData.emergency_contact, icon: Download01FreeIcons },
-        { title: "Insurance Provider", subtitle: profileData.insurance_type, icon: Download01FreeIcons },
+        { title: "Date Of Birth", subtitle: profileData.date_of_birth , icon: CalendarUserFreeIcons },
+        { title: "Gender", subtitle: profileData.gender, icon: Female02FreeIcons },
+        { title: "Contact Info", subtitle: profileData.phone_number, icon: PhoneOffIcon },
+        { title: "Emergency Contacts", subtitle: profileData.emergency_contact, icon: Contact01FreeIcons },
+        { title: "Insurance Provider", subtitle: profileData.insurance_type, icon: InsertColumnRightFreeIcons },
     ];
 
 
