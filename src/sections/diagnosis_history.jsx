@@ -1,5 +1,6 @@
 import DiagnosisChart from "../components/chart";
 import DiagnosticTable from "../components/diagnostic_table";
+import Vitals from "../components/vitals";
 
 export default function DiagnosisHistorySection({ data }) {
 
@@ -21,7 +22,9 @@ export default function DiagnosisHistorySection({ data }) {
                         <DiagnosisChart data={[...data.diagnosis_history].reverse()} />
                     </div>
 
-                    <div id="vitals" className="bg-red-500 flex-2 rounded-lg">
+
+                    <div id="vitals" className=" flex flex-2 rounded-lg h-full">
+                    <Vitals jessicaData ={[...data.diagnosis_history]} />
 
                     </div>
 
