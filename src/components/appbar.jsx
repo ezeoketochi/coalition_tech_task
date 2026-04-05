@@ -1,13 +1,13 @@
-import logo from  '../assets/TestLogo.svg';
+import logo from '../assets/TestLogo.svg';
 import senior_doctor from '../assets/senior_doctor.png';
 import { HugeIcon } from '../icons/settings_icon';
-import { Settings01Icon } from '@hugeicons/core-free-icons';
+import { Settings01Icon, Menu01FreeIcons } from '@hugeicons/core-free-icons';
 import { MoreVertical } from '@hugeicons/core-free-icons';
 import { navbarItems } from '../data/navbar_items';
 
 export default function AppBar() {
 
-    return <div className="bg-white text-black rounded-full hidden @[700px]:flex  w-full items-center justify-between lg:h-16 h-12 lg:px-8 px-4 lg:py-4 py-2">
+    return <div className="bg-white text-black rounded-full flex w-full items-center justify-between lg:h-16 h-12 lg:px-8 px-4 lg:py-4 py-2">
 
 
         <div className="size-25 lg:size-30">
@@ -25,7 +25,12 @@ export default function AppBar() {
 
         </div>
 
-        <div className='flex sm:flex-row flex-col sm:gap-2 lg:gap-3'>
+        <div className='flex sm:hidden'>
+            <HugeIcon size={20} icon={Menu01FreeIcons} />
+
+        </div>
+
+        <div className='hidden sm:flex sm:flex-row flex-col sm:gap-2 lg:gap-3'>
             <div className='flex rounded-full '>
                 <img src={senior_doctor} alt="Senior Doctor" className="w-full h-full object-contain" />
             </div>

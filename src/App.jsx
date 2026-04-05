@@ -15,7 +15,7 @@ function App() {
   const jessicaData = data && data.find((item) => item.name === "Jessica Taylor");
 
   return (
-    <div className="@container flex lg:gap-4 h-screen flex-col p-4 max-w-screen bg-slate-100">
+    <div className="@container flex lg:gap-4 lg:h-screen flex-col p-4 max-w-screen bg-slate-100">
 
       {/* navbar */}
       <AppBar />
@@ -29,7 +29,7 @@ function App() {
           Error: {error.message}</div>
       ) : (
         data && (
-          <div className="flex flex-col lg:grid flex-1 gap-3 lg:grid-cols-[1fr_2fr] 2xl:grid-cols-[20%_1fr_20%] lg:gap-8 min-h-0">
+          <div className="flex flex-col lg:grid flex-1 gap-3 lg:grid-cols-[1fr_2fr] 2xl:grid-cols-[20%_1fr_20%] lg:gap-8 min-h-0 pt-3 lg:pt-0">
 
             <div className="min-h-0">
               <PatientsSection data={data} />
